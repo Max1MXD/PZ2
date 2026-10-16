@@ -1,0 +1,59 @@
+body {
+    background-color: lightblue;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: orange;
+    border: 35px double blue;
+    border-radius: 25px;
+    text-align: right;
+    padding: 20px;
+}
+
+/* Для зображень використовується селектори . */
+.round-image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid yellow;
+}
+
+.thumbnail {
+    width: 30%;
+    height: auto;
+    border: 3px dashed blue;
+    padding: 50px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+/* :hover - реакція при наведенні курсора */
+.thumbnail:hover {
+    transform: scale(1.1);
+}
+
+.image-link img {
+    border: 4px solid blue;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-link:hover img {
+    transform: scale(1.08);
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+}
+
+/* Виключення для класу .image-link */
+a:not(.image-link) {
+    color: darkblue;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+a:not(.image-link):hover {
+    color: white;
+    background-color: darkblue;
+    text-decoration: none;
+    border-radius: 8px;
+}
